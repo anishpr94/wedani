@@ -14,6 +14,11 @@ export const styWrapper = css`
     font-size: 16px !important;
     font-family: sans-serif;
   }
+  
+   .imageShamili {
+    width:90%;
+    height:90%;
+  }
 
   .sub-title {
     color: #fff !important;

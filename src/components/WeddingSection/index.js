@@ -4,6 +4,7 @@ import { bool } from 'prop-types';
 import WeddingInfoBox from './WeddingInfoBox';
 import ButtonLive from './ButtonLive';
 import { styWrapper } from './styles';
+import shamili from '@assets/images/shamili.png';
 
 function WeddingSection({ isInvitation }) {
   const renderGuestInfo = () => {
@@ -29,6 +30,7 @@ function WeddingSection({ isInvitation }) {
               <div className="event-wrap">
                 <h2 className="main-font main-font__wedding">Venue </h2>
                 <h3 className="main-font__wedding">Shamili Auditorium, Ambalpady, Udupi </h3>
+                <figure><img className="imageShamili" src={shamili} alt="user" loading="lazy" /></figure>
               <iframe title="hi"
     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3882.1874789500757!2d74.73475571482592!3d13.338611090615892!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bbcbb7708e8b0c9%3A0x1cbe072fc357c9a6!2sShamili!5e0!3m2!1sen!2sin!4v1648792452019!5m2!1sen!2sin"
      style={{border:0, height:'50vh', width:'80%'}} allowFullScreen="" loading="lazy"
