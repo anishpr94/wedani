@@ -7,7 +7,7 @@ import CountContainer from './CountContainer';
 import ScrollToDown from './ScrollToDown';
 import { styWrapper, styHero, styBackground, styButtonWrapper } from './styles';
 
-const DELAY_TIME = 1500;
+const DELAY_TIME = 1;
 
 function WelcomeSection({ location, guestName, isInvitation, isAnonymGuest, codeLink, onClickDetail }) {
   const [loading, setLoading] = useState(false);
@@ -20,15 +20,6 @@ function WelcomeSection({ location, guestName, isInvitation, isAnonymGuest, code
   };
 
   const handleShowDetail = () => {
-    if (loading) return undefined;
-
-    try {
-      const myAudio = document.getElementById('myAudio');
-      myAudio.play();
-    } catch {
-      console.error('FAILED_TO_PLAY_MUSIC');
-    }
-
     onClickDetail();
 
     if (!alreadyDownloadData) {
@@ -45,7 +36,7 @@ function WelcomeSection({ location, guestName, isInvitation, isAnonymGuest, code
   };
 
   const renderGuestSection = () => {
-    if (isAnonymGuest) return <h2 className="to-dearest-name">Dear Friends,</h2>;
+    if (isAnonymGuest) return <h2 className="to-dearest-name">Dear Friends & Family</h2>;
 
     return (
       <Fragment>
@@ -70,7 +61,7 @@ function WelcomeSection({ location, guestName, isInvitation, isAnonymGuest, code
             <div className="col-md-8 col-md-offset-2 text-center">
               <img src={WeddingImg} alt="wedding-dinda-indra" />
               <h4 className="sub-title">The Wedding of</h4>
-              <h1 className="title">Dinda &amp; Indra</h1>
+              <h1 className="title">Shivani &amp; Anish</h1>
               <div className={isAnonymGuest ? 'margin__bottom' : ''}>
                 <CountContainer />
               </div>
