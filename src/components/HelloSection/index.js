@@ -1,9 +1,8 @@
-import React, { Fragment } from 'React';
-import { string } from 'prop-types';
+import React, {Fragment} from 'React';
 import TableExamplePagination from "./table";
 
 
-function HelloSection({ guestName }) {
+function HelloSection()  {
     return (
         <Fragment>
             <div id="fh5co-couple">
@@ -19,9 +18,5 @@ function HelloSection({ guestName }) {
         </Fragment>
     );
 }
-
-HelloSection.propTypes = {
-    guestName: string.isRequired,
-};
 
 export default HelloSection;
