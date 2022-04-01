@@ -1239,6 +1239,15 @@ form label {
 #fh5co-testimonial .wrap-testimony {
   position: relative;
 }
+
+.css-1iw8yor-WishesItem {
+  padding: 20px;
+  width: 100%;
+
+}
+.wrap-testimony {
+  display: flex;
+}
 #fh5co-testimonial .wrap-testimony .testimony-slide {
   text-align: center;
 }
@@ -1911,7 +1920,7 @@ form label {
 }
 
 .main-font {
-  font-family: 'icomoon', bold !important;
+  font-family: 'Cookie', cursive !important;
 }
 
 .and-love {
