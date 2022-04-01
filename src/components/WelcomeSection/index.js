@@ -15,7 +15,7 @@ function WelcomeSection({ location, guestName, isInvitation, isAnonymGuest, code
 
   const handleScrollTo = () => {
     /** scroll into detail view */
-    const element = document.getElementById('fh5co-couple');
+    const element = document.getElementById('fh5co-event');
     element.scrollIntoView({ behavior: 'smooth', block: 'start', inline: 'nearest' });
   };
 

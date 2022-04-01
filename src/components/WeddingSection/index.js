@@ -30,7 +30,7 @@ function WeddingSection({ isInvitation }) {
                 <h2 className="main-font main-font__wedding">Location</h2>
               <iframe title="hi"
     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3882.1874789500757!2d74.73475571482592!3d13.338611090615892!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bbcbb7708e8b0c9%3A0x1cbe072fc357c9a6!2sShamili!5e0!3m2!1sen!2sin!4v1648792452019!5m2!1sen!2sin"
-     style={{border:0, height:500, width:500}} allowFullScreen="" loading="lazy"
+     style={{border:0, height:'50vh', width:'80%'}} allowFullScreen="" loading="lazy"
     referrerPolicy="no-referrer-when-downgrade"/>
               </div>
             </div>

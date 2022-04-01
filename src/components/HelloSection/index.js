@@ -1,28 +1,27 @@
-import React, { Fragment } from 'react';
-import { bool } from 'prop-types';
+import React, { Fragment } from 'React';
+import { string } from 'prop-types';
+import TableExamplePagination from "./table";
 
-import Bride from '@assets/images/p-dinda-2.jpg';
-import Groom from '@assets/images/p-indra.jpg';
 
-import { styWrapper } from './styles';
-import BasicTable from "./table";
-
-function HelloSection({ isInvitation }) {
-  const finalSubtitle = isInvitation ? '03 Oktober 2020, HARRIS Hotel Sentraland, Semarang' : 'Sabtu, 03 Oktober 2020';
-
-  return (
-    <Fragment>
-      <div id="fh5co-couple" css={styWrapper}>
-        <div className="container">
-         <BasicTable/>
-        </div>
-      </div>
-    </Fragment>
-  );
+function HelloSection({ guestName }) {
+    return (
+        <Fragment>
+            <div id="fh5co-couple">
+                <div className="container">
+                    <div className="row">
+                        <div className="col-md-8 col-md-offset-2 text-center fh5co-heading">
+                            <h2 className="main-font">{`Contact Details`}</h2>
+                            <TableExamplePagination/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </Fragment>
+    );
 }
 
 HelloSection.propTypes = {
-  isInvitation: bool.isRequired,
+    guestName: string.isRequired,
 };
 
 export default HelloSection;

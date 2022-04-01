@@ -6,7 +6,7 @@ export const styWrapper = css`
   background-size: cover;
   background-position: center;
   width: 100%;
-  min-height: 70vh;
+  min-height: 100vh;
   color: #fff !important;
 
   .bismillah {

@@ -1,7 +1,7 @@
 import React from 'react';
 import { string, bool } from 'prop-types';
 
-function StoryItem({ image, title, date, description, isInverted }) {
+function StoryItem({ image, title, date, description, isInverted, map }) {
   return (
     <li className={isInverted && `timeline-inverted`}>
       {image && <div className="timeline-badge" style={{ backgroundImage: `url(${image})` }} />}
@@ -12,6 +12,7 @@ function StoryItem({ image, title, date, description, isInverted }) {
         </div>
         <div className="timeline-body">
           <p>{description}</p>
+          <div className="timeline-map"><p>{map}</p></div>
         </div>
       </div>
     </li>
