@@ -1247,6 +1247,7 @@ form label {
 }
 .wrap-testimony {
   display: flex;
+  padding: 10px;
 }
 #fh5co-testimonial .wrap-testimony .testimony-slide {
   text-align: center;

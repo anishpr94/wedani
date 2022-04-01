@@ -8,7 +8,7 @@ import woodlands from '@assets/images/woodlands.png';
 import './styles.css'
 
 export const ItemExampleDescriptions = () => (
-    <Item.Group>
+    <Item.Group divided>
       <Item>
         <Item.Image size='small' src={mtr} />
 

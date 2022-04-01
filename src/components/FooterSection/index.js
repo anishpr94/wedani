@@ -10,7 +10,7 @@ function FooterSection({ isInvitation }) {
           <div className="row copyright">
             <div className="col-md-12 text-center">
               <p>
-                <small className="block">&copy; 2020 Anish & Shivani Wedding. All Rights Reserved.</small>
+                <small className="block">&copy; 2022 Anish & Shivani Wedding. All Rights Reserved.</small>
                 <small className="block">
                   Original Template from{' '}
                   <a href="http://freehtml5.co/" target="_blank" rel="noreferrer">
