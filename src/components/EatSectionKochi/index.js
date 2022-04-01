@@ -1,19 +1,19 @@
 import React from 'react';
-import InfoContainer from './WishesContainer';
+import EatContainer from './WishesContainer';
 
-function InfoSection() {
+function EatSectionKochi() {
   return (
     <div id="fh5co-testimonial">
       <div className="container">
         <div className="row">
           <div className="row">
             <div className="col-md-8 col-md-offset-2 text-center fh5co-heading">
-              <h2 className="main-font">Places to visit in Udupi</h2>
+              <h2 className="main-font">Food worth trying!</h2>
             </div>
           </div>
           <div className="row">
             <div className="col-md-12">
-              <InfoContainer />
+              <EatContainer />
             </div>
           </div>
         </div>
@@ -22,4 +22,4 @@ function InfoSection() {
   );
 }
 
-export default InfoSection;
+export default EatSectionKochi;

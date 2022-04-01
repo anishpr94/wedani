@@ -17,6 +17,8 @@ import FooterSection from '@components/FooterSection';
 import FloatingMusic from '@components/FloatingMusic/Loadable';
 import InfoSection from "../components/InfoSection";
 import EatSection from "../components/EatSection";
+import InfoSectionKochi from "../components/InfoSectionKochi";
+import EatSectionKochi from "../components/EatSectionKochi";
 
 function Home({ location }) {
   const guestName = decodeURIComponent(getQueryValue(location, 'to') || '');
@@ -45,6 +47,8 @@ function Home({ location }) {
         <WishesSection />
         <InfoSection/>
         <EatSection/>
+        <InfoSectionKochi/>
+        <EatSectionKochi/>
         <FooterSection isInvitation={isInvitation} />
       </Fragment>
     );
