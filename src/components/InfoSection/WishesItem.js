@@ -1,10 +1,14 @@
 import React from 'react';
 import { string, bool } from 'prop-types';
 import { styWrapperItem, styWithAnimation } from './styles';
-import { Card, Icon } from 'semantic-ui-react'
+import { Card, Icon , Grid, Image} from 'semantic-ui-react'
+import temple from '@assets/images/udupitemple1.jpeg';
+import malpe from '@assets/images/malpe.jpeg';
+import pithrodybeach from '@assets/images/pitrodibeach.jpeg';
+import stmary from '@assets/images/stmary.jpeg';
 import './styles.css'
 
-function WishesItem({ image, name, infoName, description, isActive, map }) {
+function InfoItem({ image, name, infoName, description, isActive, map }) {
 
   const renderItem = () => {
     return (
@@ -42,7 +46,7 @@ function WishesItem({ image, name, infoName, description, isActive, map }) {
   return <div css={styWithAnimation(isActive)}>{renderItem1()}</div>;
 }
 
-WishesItem.propTypes = {
+InfoItem.propTypes = {
   image: string.isRequired,
   name: string.isRequired,
   infoName: string.isRequired,
@@ -51,4 +55,38 @@ WishesItem.propTypes = {
   isActive: bool.isRequired,
 };
 
-export default React.memo(WishesItem);
+export default React.memo(InfoItem);
+
+export const GridExampleDividedPhrase = () => (
+    <Grid columns='two' celled>
+      <Grid.Row>
+        <Grid.Column>
+          <h4>Shri Krishna Matha</h4>
+          <span className="infoName">One of the most famous temple in Udupi, <a href="https://goo.gl/maps/bCbAbTVu6wAU3Lfw9">Click to get location</a></span>
+          <img src={temple} alt="user" loading="lazy" />
+            <p className="description">Popular Temple located in Cart Street. There are other Mathas in the same street. Walkable from Meenakshi Inn(~500m).</p>
+        </Grid.Column>
+        <Grid.Column>
+          <h4>Malpe Beach</h4>
+          <span className="infoName">For beach lovers, <a href="https://goo.gl/maps/9MHAbmWLga8WD6rR8">Click to get location</a></span>
+          <img src={malpe} alt="user" loading="lazy" />
+            <p className="description">There are buses that go to Malpe from City Bus stand(walkable from Meenakshi Inn). You can also take auto. There are a lot of activities on the beach like Para-sailing, Speed boats, Kite Flying etc. It is safe to take dip in the beach. There are good places to eat around. Consider trying churmuri as walk around the beach. The place can get very crowded in the evening. </p>
+        </Grid.Column>
+      </Grid.Row>
+
+      <Grid.Row>
+        <Grid.Column>
+        <h4>Pithrody Udyavar Beach</h4>
+        <span className="infoName">For those who love driving, <a href="https://goo.gl/maps/jhrM3o38EX5W72G78">Click to get location</a></span>
+        <img src={pithrodybeach} alt="user" loading="lazy" />
+          <p className="description">A beautiful strip of land between a river and a sea in India? Sign us up! In the small town of Udyavara, Udupi (Karnataka), you’ll find the stunning Pithrody beach best explored on a drive upon a small stretch of road. It sits serenely between the Udyavara River on one side and the Arabian Sea on the other!</p>
+      </Grid.Column>
+        <Grid.Column>
+          <h4>St. Mary's Islands</h4>
+          <span className="infoName">Mesmerizing Island, <a href="https://goo.gl/maps/m1c7437AwZcsYjxv7">Click to get location</a></span>
+          <img src={stmary} alt="user" loading="lazy" />
+            <p className="description">St. Mary's Islands, also known as Coconut Island and Thonsepar, are a set of four small islands in the Arabian Sea off the coast of Malpe in Udupi, Karnataka, India. They are known for their distinctive geological formation of columnar rhyolitic lava. </p>
+        </Grid.Column>
+      </Grid.Row>
+    </Grid>
+)

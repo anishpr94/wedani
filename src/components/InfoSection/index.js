@@ -1,19 +1,19 @@
 import React from 'react';
-import WishesContainer from './WishesContainer';
+import InfoContainer from './WishesContainer';
 
-function WishesSection() {
+function InfoSection() {
   return (
     <div id="fh5co-testimonial">
       <div className="container">
         <div className="row">
           <div className="row">
             <div className="col-md-8 col-md-offset-2 text-center fh5co-heading">
-              <h2 className="main-font">Accomodations</h2>
+              <h2 className="main-font">Places to visit</h2>
             </div>
           </div>
           <div className="row">
             <div className="col-md-12">
-              <WishesContainer />
+              <InfoContainer />
             </div>
           </div>
         </div>
@@ -22,4 +22,4 @@ function WishesSection() {
   );
 }
 
-export default WishesSection;
+export default InfoSection;

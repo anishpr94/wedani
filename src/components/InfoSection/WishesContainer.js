@@ -1,20 +1,20 @@
 import React, {useState} from 'react';
 
-import WishesItem from './WishesItem';
+import InfoItem , {GridExampleDividedPhrase} from './WishesItem';
 import {wishlist} from './wishlist-data';
 
 const INTERVAL_SLIDE = 35000;
 
-function WishesContainer() {
+function InfoContainer() {
 
   const renderWishlist = () => {
-    return wishlist.map((w, index) => <WishesItem key={index} {...w} />);
+    return wishlist.map((w, index) => <InfoItem key={index} {...w} />);
   };
   return (
     <div className="wrap-testimony">
-      {renderWishlist()}
+      <GridExampleDividedPhrase/>
     </div>
   );
 }
 
-export default React.memo(WishesContainer);
+export default React.memo(InfoContainer);
