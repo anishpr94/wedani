@@ -16,6 +16,7 @@ import ConfirmationSection from '@components/ConfirmationSection';
 import FooterSection from '@components/FooterSection';
 import FloatingMusic from '@components/FloatingMusic/Loadable';
 import InfoSection from "../components/InfoSection";
+import EatSection from "../components/EatSection";
 
 function Home({ location }) {
   const guestName = decodeURIComponent(getQueryValue(location, 'to') || '');
@@ -43,6 +44,7 @@ function Home({ location }) {
         {/*<PhotoSection />*/}
         <WishesSection />
         <InfoSection/>
+        <EatSection/>
         <FooterSection isInvitation={isInvitation} />
       </Fragment>
     );
